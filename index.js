@@ -1,3 +1,4 @@
+
 const cors = require('cors')
 const express = require('express');
 const conectarBaseDeDatos = require('./config/db')
@@ -15,7 +16,7 @@ const corsoptions = {
         }
     }
 }
-app.use(cors(corsoptions));
+aplicacion.use(cors(corsoptions));
 
 aplicacion.use(express.json());
 
