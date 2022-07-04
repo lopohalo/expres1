@@ -1,4 +1,4 @@
-import cors from 'cors'
+
 const express = require('express');
 const conectarBaseDeDatos = require('./config/db')
 
