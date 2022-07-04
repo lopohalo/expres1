@@ -4,7 +4,8 @@
   "description": "j",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon ."
+    "dev": "nodemon .",
+    "start": "serve -s build"
   },
   "author": "juan",
   "license": "ISC",
@@ -14,6 +15,7 @@
   "dependencies": {
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
-    "mongoose": "^6.4.2"
+    "mongoose": "^6.4.2",
+    "serve": "^13.0.2"
   }
 }
