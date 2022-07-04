@@ -13,7 +13,7 @@ const corsoptions = {
         if(whitelist.includes(origin)){
             callback(null, true)
         }else {
-            callback(new Error('error de cors'))
+            callback(true)
         }
     }
 }
