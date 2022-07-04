@@ -1,11 +1,11 @@
 import cors from 'cors'
 const express = require('express');
 const conectarBaseDeDatos = require('./config/db')
-require('dotenv').config({path:"config.env"})
+
 
 const aplicacion = express();  
 conectarBaseDeDatos()
-const whitelist = [process.env.Fronted]
+const whitelist = 'https://effulgent-klepon-812c50.netlify.app'
 const corsoptions = {
     origin: function(origin, callback) {
         if(whitelist.includes(origin)){
