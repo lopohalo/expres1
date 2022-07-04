@@ -4,7 +4,7 @@
   "description": "j",
   "main": "index.js",
   "scripts": {
-    "dev": "node index.js",
+    "dev": "nodemon .",
     "start": "node index.js"
   },
   "author": "juan",

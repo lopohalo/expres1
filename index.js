@@ -1,24 +1,9 @@
-
-const cors = require('cors')
 const express = require('express');
 const conectarBaseDeDatos = require('./config/db')
-
-
+const cors = require('cors');
 const aplicacion = express();  
 conectarBaseDeDatos()
-// const whitelist = ["https://effulgent-klepon-812c50.netlify.app"]
-// const corsoptions = {
-//     origin: function(origin, callback) {
-//         console.log(origin)
-//         if(whitelist.includes(origin)){
-//             callback(null, true)
-//         }else {
-//             callback(true)
-//         }
-//     }
-// }
 aplicacion.use(cors());
-
 aplicacion.use(express.json());
 
 aplicacion.use('/api', require('./routes/proyecto_rutas'))
