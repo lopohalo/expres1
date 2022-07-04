@@ -8,6 +8,6 @@ aplicacion.use(express.json());
 
 aplicacion.use('/api', require('./routes/proyecto_rutas'))
 
-aplicacion.listen(4000,()=>{
-    console.log("el servidor se ejecuta en el puerto 4000")
-})
+aplicacion.listen(process.env.PORT || 80, () => {
+    console.log("Listening on port 80");
+  });
