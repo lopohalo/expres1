@@ -7,7 +7,7 @@ router.get('/obtener-empresas/', empresaController.obtenerEmpresas)
 router.get('/obtener-empresa', empresaController.obtenerEmpresa)
 router.put('/actualizar-empresa/:id', empresaController.actualizarEmpresa)
 
-router.post('', contactoController.crearContacto)
+router.post('/crear-contacto', contactoController.crearContacto)
 router.post('/login', contactoController.autenticar)
 router.get('/obtener-contacto/:id', contactoController.obtenerContacto)
 router.get('/obtener-contactos/', contactoController.obtenerContactos)
