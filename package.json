@@ -4,8 +4,8 @@
   "description": "j",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon .",
-    "start": "serve -s build"
+    "dev": "node index.js",
+    "start": "node index.js"
     
   },
   "author": "juan",
